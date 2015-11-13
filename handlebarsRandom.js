@@ -8,7 +8,8 @@ app.set('view engine', 'handlebars');
 app.set('port', 3003);
 
 function getRandomNum() {
-	var randomNum = Math.floor((Math.random() * 10) + 1);
+	var stuff = {};
+	stuff.randomNum = Math.floor((Math.random() * 10) + 1);
 	return randomNum;
 }
 
