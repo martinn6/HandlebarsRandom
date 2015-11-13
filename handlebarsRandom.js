@@ -14,7 +14,10 @@ function getRandomNum() {
 
 app.get('/',function(req,res){
   res.render('home')
-  res.render('randomNum', getRandomNum());
+});
+
+app.use(function(req,res) {
+	res.render('randomNum', getRandomNum());
 });
 
 app.get('/other-page',function(req,res){
