@@ -14,11 +14,11 @@ function getRandomNum() {
 }
 
 app.get('/',function(req,res){
-  res.render('home')
+  res.render('home', getRandomNum())
 });
 
 app.use(function(req,res) {
-	res.render('randomNum', getRandomNum());
+	res.render('randomNum', '2');
 });
 
 app.get('/other-page',function(req,res){
