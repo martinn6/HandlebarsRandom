@@ -10,7 +10,7 @@ app.set('port', 3003);
 function getRandomNum() {
 	var stuff = {};
 	stuff.randomNum = Math.floor((Math.random() * 10) + 1);
-	return randomNum;
+	return stuff;
 }
 
 app.get('/',function(req,res){
